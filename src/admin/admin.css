@@ -136,6 +136,11 @@ nav button {
 .nav__logo {
   font-weight: 600;
   font-size: 1.2rem;
+  color: #333;
+}
+
+.nav__content {
+  color: #333;
 }
 
 .nav__items {

@@ -1,7 +1,5 @@
 <?php
-// require('dbconnect.php');
-// $stmt = $db->query('SELECT * FROM questions');
-// $questions = $stmt->fetchAll();
+require './db/pdo.php';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -12,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POSSE 初めてのWeb制作</title>
   <!-- スタイルシート読み込み -->
-  <link rel="stylesheet" href="./assets/styles/common.css">
+  <link rel="stylesheet" href="./src/assets/styles/common.css">
   <!-- Google Fonts読み込み -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

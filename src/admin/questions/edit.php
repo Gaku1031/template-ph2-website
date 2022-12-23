@@ -47,16 +47,13 @@ if (isset($_GET['id'])) {
         <li><a href="<?= ROOT_URL ?>contact.php">Contact</a></li>
         <?php if(isset($_SESSION['user-id'])) :?>
             <li class="nav__profile">
-            <div class="avatar">
-              <img src="<?= ROOT_URL . './images/' . $avatar['avatar']?>">
-            </div>
             <ul>
-              <li><a href="<?= ROOT_URL ?>admin/index.php">Dashboard</a></li>
-              <li><a href="<?= ROOT_URL ?>logout.php">Logout</a></li>
+              <li><a href="<?= ROOT_URL ?>admin/">Dashboard</a></li>
+              <li><a href="<?= USER_URL ?>logout.php">Logout</a></li>
             </ul>
           </li>
         <?php else :?>
-            <li><a href="<?= ROOT_URL ?>signin.php">Signin</a></li>
+            <li><a href="<?= USER_URL ?>signin.php">Signin</a></li>
         <?php endif ?>
       </ul>
 

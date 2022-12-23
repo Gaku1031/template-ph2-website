@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
   //validate form data
   if (!$content) {
     $_SESSION['edit-post'] = "Couldn't update post. Invalid form data on edit post page.";
-  } 
+  }
 
 if ($_SESSION['edit-post']) {
   header('location: ' . ROOT_URL . 'admin/');

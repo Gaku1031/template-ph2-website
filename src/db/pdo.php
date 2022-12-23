@@ -2,6 +2,7 @@
 session_start();
 define('ROOT_URL', 'http://localhost:8080/');
 define('QUIZ_URL', 'http://localhost:8080/quiz');
+define('USER_URL', 'http://localhost:8080/components/');
 
 class Database {
   private static $db;

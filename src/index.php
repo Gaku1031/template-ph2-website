@@ -1,7 +1,6 @@
 <?php
-// require('dbconnect.php');
-// $stmt = $db->query('SELECT * FROM questions');
-// $questions = $stmt->fetchAll();
+require './db/pdo.php';
+$db = new mysqli('db', 'root', 'root', 'posse');
 ?>
 <!DOCTYPE html>
 <html lang="ja">

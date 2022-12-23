@@ -1,8 +1,15 @@
 <?php
 require '../db/pdo.php';
-include '../components/dashboard-header.php';
+// if (!$_SESSION['user-id']) {
+//   header('location:' . USER_URL. 'signin.php');
+//   exit();
+// }
+$current_user_id = $_SESSION['user-id'];
 
 $db = new mysqli('db', 'root', 'root', 'posse');
+
+include '../components/dashboard-header.php';
+
 
 // fetch current questions from database
 $query = "SELECT id, content FROM questions";
